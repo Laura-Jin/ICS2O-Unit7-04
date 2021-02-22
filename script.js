@@ -9,7 +9,7 @@ function verifyButton () {
 
   day = document.getElementById('day').value
 
-  if ((day == 'Tuesday' || day == 'Thursday') || (age > 12 && age < 21)) {
+  if ((day === 'Tuesday' || day === 'Thursday') || (age > 12 && age < 21)) {
     document.getElementById('price').innerHTML = 'You are eligible for student pricing'
   } else {
     document.getElementById('price').innerHTML = 'You must pay regular price'
